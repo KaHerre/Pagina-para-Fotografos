@@ -1,0 +1,186 @@
+*{
+  margin:0;
+}
+body{
+font-family: 'Dancing Script', cursive;
+background-color: black;
+font-size: 16px;
+color: white;
+overflow: hidden scroll;
+}
+header{
+  margin:0 auto;
+  width: 900px;
+  height: 1em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #5b7989;
+  color: white;
+  border-radius: 10px 10px 0% 0%;
+  animation: header 1s;
+}
+.Comenzando{
+  float: left;
+  margin-left: 15px;
+  font-size:20px;
+  text-shadow: 1px 2px 2px #02010a ;
+}
+nav{
+  float: right;
+  margin-right:10px;
+}
+a{
+  margin:5px;
+  text-decoration: none;
+  color: white;
+}
+#wrapper{
+  width: 900px;
+  margin:0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+#contenedor1{  /*section*/
+  background-color: #82c3a6;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 2%;
+  padding-left: 8%;
+  padding-bottom: 2%;
+}
+
+#contenedor2{
+  margin:0 auto;
+  height: 300px;
+  display: flex;
+  background-color: #d5c75f;
+  padding-top:2%;
+  color: black;
+}
+.izquierda img{
+  width: 90%;
+  flex-flow: row wrap;
+  transition: all 1s ease-out;
+}
+.izquierda img:hover{
+  transform: rotate(10deg);
+  box-shadow: 4px 5px 5px #82c3a6;
+  border: 2px solid  rgb(7,207,235);
+  transition: all 1s ease-out;
+}
+.Derecha img{
+  width: 90%;
+  flex-flow: row wrap;
+  transition: all 1s ease-out;
+}
+.Derecha img:hover{
+  transition: all 1s ease-out;
+  transform: translate(5px, -20px);
+  box-shadow: 4px 5px 5px #82c3a6;
+  border: 2px solid rgb(7,207,235);
+}
+#contenedor3{
+  width:900px;
+  margin:0 auto;
+  display:flex;
+  background-color:#C6d5c5;
+  padding-top: 2%;
+  border-radius: 0px 0px 10px 10px;
+}
+#contenedor3 p, h1{
+  margin-top:10px;
+  color: black;
+}
+.bloque {
+  min-height: 200px;
+  width: 100%;
+}
+
+@keyframes header {
+  0%{
+    margin-top: 100%;
+  }
+  75%{
+    margin-top:-2%;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+@media all and (max-width:800px) and (min-width:480px) {
+ body{
+   width: 100%;
+ }
+ header{
+   width: 100%;
+ }
+ article{
+   width: 100%;
+ }
+ #wrapper{
+  width:100%;
+  height: auto;
+}
+ #contenedor1{
+   width: 100%;
+   height: auto;
+   padding-left: 0px;
+ }
+img{
+   width: 100%;
+ }
+ #contenedor2{
+   width: 100%;
+   height: auto;
+ }
+ #contenedor3{
+   width: 100%;
+   height: auto;
+ }
+}
+@media all and (max-width:480px) {
+  header{
+    width: 100%;
+    height: 70px;
+  }
+ nav{
+    margin-right: 25%;
+    margin-top: 15px;
+  }
+.Comenzando{
+  margin-left: 18%;
+}
+  article{
+    width: 100%;
+    float: left;
+  }
+  #wrapper{
+   width:100%;
+   height: auto;
+    display:flow-root;
+ }
+  #contenedor1{
+    width: 100%;
+    height: auto;
+    padding-left: 0px;
+  }
+ img{
+   width: 100%;
+   margin-bottom:10%;
+  }
+  #contenedor2{
+    width: 100%;
+    height: auto;
+    display: flow-root;
+    padding-bottom:  10px;
+  }
+  #contenedor3{
+    width: 100%;
+    height: auto;
+    display:flow-root;
+  }
+  .bloque {
+    width: 100%;
+    height: 150px;
+  }
+}
